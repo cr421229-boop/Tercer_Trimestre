@@ -3,10 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola mundo! </title>
+    <title>Razonamiento Cuantitativo.</title>
+    <meta name="description"content="Herramienta educativo para clasificar números en conjuntos (naturales, enteros,racionales) y resolver operaciónes aritmeticas con explicaciones paso a paso">
+    <link rel ="stylesheet" href="css/syles.css">
 </head>
-<body>  
-    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat quibusdam sunt officiis laudantium fugiat aperiam porro? Molestias nemo illo ducimus facere eum. Nesciunt quod vitae eaque eos ipsam dolorum fugit? </p> 
-    
+<body> 
+    <div class="principal">
+        
+        <nav class="opciones-nav" role="tablist">
+            <button class="tab-btn" role="tab">
+                <span class="nav-tab-text">Conjuntos de Números</span> 
+            </button>
+            <button class="tab-btn" role="tab">
+               <span class="nav-tab-text">Operaciones Aritmeticas</span> 
+            </button>
+            <button class="tab-btn" role="tab">
+                <span class="nav-tab-text">:D </span> 
+            </button>
+        </nav>
+        <section id="panel-clasificar" class="tab-panel active">
+            <div class="card">
+                <h2>Clasificador de Conjunto Números</h2>
+                <p>Ingresa un número y seleciona un conjunto para verificar si pertenece a él.</p>
+            </div>
+            <input type="text" id="número-input">
+            <select id="select-conjuntos">
+                <option value="naturales">Naturales</option>
+                <option value="enteros">Enteros</option>
+                <option value="racionales">Racionales</option>
+
+            </select>
+
+
+
+
+        </section>
+
+
+
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat quibusdam sunt officiis laudantium fugiat aperiam porro? Molestias nemo illo ducimus facere eum. Nesciunt quod vitae eaque eos ipsam dolorum fugit? </p> 
+    </div>   
 </body>
 </html>
