@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Razonamiento Cuantitativo.</title>
-    <meta name="description"content="Herramienta educativo para clasificar números en conjuntos (naturales, enteros,racionales) y resolver operaciónes aritmeticas con explicaciones paso a paso">
-    <link rel ="stylesheet" href="css/syles.css">
+    <title>Razonamientoo Cuantitativo 1 </title>
+    <meta name="description" content="Herramienta educativa para clasificar números en conjuntos (naturales, enteros, racionales) y resolver operaciones aritmeticas con explicaciones paso a paso" >
+    <link rel="stylesheet" href="css/styles.css">
+
 </head>
-<body> 
+<body>
+    <header>
+        <div class="header">
+            <h1>Herramienta educativa para Razonamiento Cuantitativo </h1>
+            <p class="Herramienta educativa para clasificar números en conjuntos (naturales, enteros y racionales) y crear operaciones aritméticas con explicaciones paso a paso "></p>
+        </div>
+    </header>
     <div class="principal">
-        
         <nav class="opciones-nav" role="tablist">
             <button class="tab-btn" role="tab">
-                <span class="nav-tab-text">Conjuntos de Números</span> 
+                <span class="nav-tab-text">Conjuntos de Números</span><!--aqui creamos un boton guardando relacion con el padre -->
+               
             </button>
             <button class="tab-btn" role="tab">
-               <span class="nav-tab-text">Operaciones Aritmeticas</span> 
+                <span class="nav-tab-text">Operaciones Aritmeticas</span>
             </button>
             <button class="tab-btn" role="tab">
-                <span class="nav-tab-text">:D </span> 
+                <span class="nav-tab-text"> :D </span>
             </button>
         </nav>
-        <section id="panel-clasificar" class="tab-panel active">
-            <div class="card">
-                <h2>Clasificador de Conjunto Números</h2>
-                <p>Ingresa un número y seleciona un conjunto para verificar si pertenece a él.</p>
+
+        <section id="panel-clasificar" clss="tab-panel active">
+            <div class="card"> <!--titulo-->
+                <div class="card-header">
+                <h2>Clasificador de Conjuntos de Números</h2>
+                <p>Ingresa un numero y selecciona un conjunto para verificar si pertenece a él.</p>
             </div>
-            <input type="text" id="número-input">
-            <select id="select-conjuntos">
-                <option value="naturales">Naturales</option>
-                <option value="enteros">Enteros</option>
-                <option value="racionales">Racionales</option>
+           
+            <div class="card-body">
+                <div class="card-object"><!--con el div encapsulamos lo que hay dentro para mejor visualizacion-->
+                    <label>Inserte el Número:</label> <!--Texto que acompaña el recuadro para que el usuario ingrese dicha informacion -->
+                    <input type="text" id="numero-input"placeholder="Ej: 1, -8, 3/4, 7.6"> <!--placeholder es para que el texto sse muestre dentro del recuadro pero no como definido sino solo visual-->
+                </div >
 
-            </select>
-
-
-
-
+                <div class="card-object"><!--con el div encapsulamos lo que hay dentro para mejor visualizacion--><!--card = valor de tarjeta que mejora la visualizacion -->
+                    <select id="select-conjuntos"> <!--aqui estamos creando un menu de selccion-->
+                        <option value="">Selecciona un conjunto</option><!-- "" = se coloca para que se vea visualmente bien-->
+                        <option value="naturales">Naturales(N)</option> 
+                        <option value="enteros">Enteros(Z)</option>
+                        <option value="racionales">Racionales(Q)</option>
+                    </select>
+                </div>
+                <button class="tab-btn" id="btn-clasificador" type="button">Evaluar</button> <!--boton que aparece al lado del recuadro para enviar la información-->
+            </div>
+            
         </section>
-
-
-
-        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat quibusdam sunt officiis laudantium fugiat aperiam porro? Molestias nemo illo ducimus facere eum. Nesciunt quod vitae eaque eos ipsam dolorum fugit? </p> 
-    </div>   
+        
+    </div>
 </body>
 </html>
