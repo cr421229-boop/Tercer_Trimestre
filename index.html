@@ -54,7 +54,34 @@
                     <button class="tab-btn" id="btn-clasificador" type="button">Evaluar</button>
                 </div>
             </div>
-            </section>
+        </section>
+
+        <section id="panel-operaciones" class="tab-panel active">
+
+            <div class="card">
+                <div class="card-header">
+                     <h2>Clasificar de Conjunto de Numeros</h2>
+                    <p>Ingresa un numero y selecciona un conjunto para clasificar si pertenece a el.</p>
+                </div>
+
+                <div class="card-body">
+                    <div class="card-object">
+                        <label>Inserte el Numero: </label>
+                        <input type="text" id="numero-input" placeholder="Ej: 1, -8, 3/4, 7.6">
+                    </div>
+
+                    <div class="card-object">
+                        <select id="select-conjuntos">
+                            <option value=""> Selecciona un conjunto</option>
+                            <option value="naturales">Naturales(N)</option>
+                            <option value="enteros">Enteros(Z)</option>
+                            <option value="racionales">Racionales(Q)</option>
+                        </select>
+                    </div>
+                    <button class="tab-btn" id="btn-clasificador" type="button">Evaluar</button>
+                </div>
+            </div>
+        </section>    
 
     </div> 
 </body>
